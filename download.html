@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Downloading DockPeek...</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>Downloading DockPeek 1.1...</p>
+    <script>
+        fetch('DockPeek-1.1.dmg')
+            .then(r => r.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'DockPeek-1.1.dmg';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.write('<p>✓ Download started. If it did not begin, <a href="DockPeek-1.1.dmg">click here</a>.</p>');
+            })
+            .catch(e => {
+                document.write('<p>Error: ' + e.message + '</p><p><a href="DockPeek-1.1.dmg">Direct download</a></p>');
+            });
+    </script>
+</body>
+</html>
