@@ -12,37 +12,6 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
-        header {
-            background: #1a1a1a;
-            border-bottom: 1px solid #333;
-            padding: 16px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-weight: 600;
-            font-size: 18px;
-            color: #fff;
-            text-decoration: none;
-        }
-        nav a {
-            color: #aaa;
-            text-decoration: none;
-            font-size: 14px;
-            margin-left: 32px;
-            transition: color 0.2s;
-        }
-        nav a:hover { color: #fff; }
-
         .hero {
             max-width: 1200px;
             margin: 80px auto 60px;
@@ -59,9 +28,6 @@
             font-size: 20px;
             color: #999;
             margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .cta-button {
             display: inline-block;
@@ -71,10 +37,10 @@
             border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.2s;
             font-size: 16px;
             border: none;
             cursor: pointer;
+            transition: background 0.2s;
         }
         .cta-button:hover {
             background: #45a049;
@@ -89,351 +55,29 @@
             margin-bottom: 24px;
             border: 1px solid #4CAF50;
         }
-
-        .section {
-            max-width: 1200px;
-            margin: 100px auto;
-            padding: 0 20px;
-        }
-        .section h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin: 60px 0;
-        }
-        .feature {
-            padding: 32px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            border: 1px solid #333;
-        }
-        .feature h3 {
-            font-size: 18px;
-            margin-bottom: 12px;
-            color: #4CAF50;
-        }
-        .feature p {
-            color: #aaa;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 60px 0;
-        }
-        .comparison-box {
-            padding: 32px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            border: 1px solid #333;
-        }
-        .comparison-box h3 {
-            font-size: 24px;
-            margin-bottom: 24px;
-            color: #4CAF50;
-        }
-        .comparison-box ul {
-            list-style: none;
-        }
-        .comparison-box li {
-            padding: 8px 0;
-            color: #aaa;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-        }
-        .comparison-box li:before {
-            content: "✓";
-            color: #4CAF50;
-            font-weight: bold;
-            margin-right: 12px;
-        }
-        .comparison-box li.coming-soon {
-            color: #666;
-        }
-        .comparison-box li.coming-soon:before {
-            content: "○";
-            color: #666;
-        }
-
-        .requirements {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 32px;
-            margin: 60px 0;
-        }
-        .requirements h3 {
-            margin-bottom: 16px;
-            color: #4CAF50;
-        }
-        .requirements p {
-            color: #aaa;
-            font-size: 14px;
-        }
-
-        .installation {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 32px;
-            margin: 60px 0;
-        }
-        .installation h3 {
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        .installation ol {
-            margin-left: 20px;
-            color: #aaa;
-            font-size: 14px;
-        }
-        .installation li {
-            margin-bottom: 12px;
-            line-height: 1.8;
-        }
-
-        .faq {
-            margin: 60px 0;
-        }
-        .faq-item {
-            margin-bottom: 32px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid #333;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-item h4 {
-            color: #4CAF50;
-            margin-bottom: 12px;
-            font-size: 16px;
-        }
-        .faq-item p {
-            color: #aaa;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .cta-section {
-            text-align: center;
-            padding: 80px 20px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            margin: 100px 0;
-        }
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .cta-section p {
-            color: #aaa;
-            margin-bottom: 32px;
-            font-size: 16px;
-        }
-
         footer {
-            background: #0a0a0a;
-            border-top: 1px solid #333;
             text-align: center;
             padding: 40px 20px;
             color: #666;
             font-size: 12px;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 32px; }
-            .hero .tagline { font-size: 16px; }
-            .comparison { grid-template-columns: 1fr; }
-            .section h2 { font-size: 28px; }
-            .cta-section h2 { font-size: 28px; }
+            margin-top: 80px;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">FluxDesign</a>
-            <div>
-                <a href="/">Home</a>
-                <a href="/#all-apps">Apps</a>
-            </div>
-        </nav>
-    </header>
-
     <div class="hero">
         <div class="badge">✨ Free & Open</div>
         <h1>The right window.<br>One glance away.</h1>
         <p class="tagline">Hover over an app in your Dock to preview its open windows. Click the one you want and get straight back to it.</p>
-        <button class="cta-button" onclick="downloadDMG()">
-            ⬇ Download for Free (1.3 MB)
-        </button>
-    </div>
-
-    <div class="section">
-        <h2>Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Live Previews</h3>
-                <p>Hover over any app in your Dock to instantly see thumbnails of all open windows—no clicks required.</p>
-            </div>
-            <div class="feature">
-                <h3>Click to Switch</h3>
-                <p>Click any thumbnail to bring that window to the front. No more digging through window lists.</p>
-            </div>
-            <div class="feature">
-                <h3>Media Controls</h3>
-                <p>Control playback in Music, Spotify, and other media apps directly from the preview panel.</p>
-            </div>
-            <div class="feature">
-                <h3>Keyboard Navigation</h3>
-                <p>Use arrow keys and Return to navigate and switch windows—never leave your keyboard.</p>
-            </div>
-            <div class="feature">
-                <h3>Close Windows</h3>
-                <p>Close any window from the preview panel. Option+click to close instead of switching.</p>
-            </div>
-            <div class="feature">
-                <h3>Lightweight</h3>
-                <p>Minimal menu bar icon. Settings tucked away. Just hover when you need it.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>DockPeek vs. DockSwitch</h2>
-        <div class="comparison">
-            <div class="comparison-box">
-                <h3>DockPeek (This)</h3>
-                <ul>
-                    <li>Hover-triggered preview</li>
-                    <li>See any app's windows</li>
-                    <li>Media playback controls</li>
-                    <li>Close/minimize windows</li>
-                    <li>Global keyboard shortcuts</li>
-                    <li>Full-featured & powerful</li>
-                    <li>Free & open</li>
-                </ul>
-            </div>
-            <div class="comparison-box">
-                <h3>DockSwitch (Free)</h3>
-                <ul>
-                    <li>Menu bar click trigger</li>
-                    <li>Current app windows only</li>
-                    <li class="coming-soon">Media controls</li>
-                    <li class="coming-soon">Close/minimize</li>
-                    <li>Local keyboard navigation</li>
-                    <li>Lightweight & simple</li>
-                    <li>App Store (coming soon)</li>
-                </ul>
-            </div>
-        </div>
-        <p style="text-align: center; color: #999; margin-top: 32px; font-size: 14px;">
-            <strong>DockSwitch</strong> is a free App Store version for discovery. <strong>DockPeek</strong> is the full-featured free direct distribution for power users.
-        </p>
-    </div>
-
-    <div class="section">
-        <div class="requirements">
-            <h3>System Requirements</h3>
-            <p><strong>macOS 13.0 or later</strong> (Intel and Apple Silicon)</p>
-            <p style="margin-top: 12px; color: #999;">Requires Screen Recording and Accessibility permissions for window previews and control.</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="installation">
-            <h3>Installation</h3>
-            <ol>
-                <li><strong>Download & Extract:</strong> Click the download button above, then double-click DockPeek.dmg to mount it</li>
-                <li><strong>Drag to Applications:</strong> Drag DockPeek.app from the disk image to your Applications folder</li>
-                <li><strong>Grant Permissions:</strong> Open System Settings → Privacy & Security → Accessibility, add DockPeek to the list</li>
-                <li><strong>Grant Screen Recording:</strong> System Settings → Privacy & Security → Screen Recording, add DockPeek</li>
-                <li><strong>Launch:</strong> Open Applications → DockPeek. Click the grid icon in your menu bar, then hover over any Dock app to see its windows</li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="faq">
-            <h2 style="text-align: left; margin-bottom: 40px;">Frequently Asked Questions</h2>
-
-            <div class="faq-item">
-                <h4>Why do I need to grant Accessibility permission?</h4>
-                <p>Accessibility APIs let DockPeek close windows, minimize apps, and control media playback—the features that make it powerful. macOS requires explicit permission for any app that needs these capabilities.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Does DockPeek work with all apps?</h4>
-                <p>Yes. It works with every macOS app—native apps, browsers, terminals, everything. Some full-screen or game apps may not show previews due to their own restrictions, but DockPeek itself is universal.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Is there a free version?</h4>
-                <p>Yes. <strong>DockSwitch</strong> is a free App Store alternative that shows windows from the current app only. DockPeek is the full-featured free direct distribution for power users.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Can I customize keyboard shortcuts?</h4>
-                <p>Not yet, but it's planned. For now, arrow keys navigate, Return switches, Escape closes the panel, and Cmd+W closes the focused window.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Will DockPeek ever be on the App Store?</h4>
-                <p>No. The App Store's sandbox restrictions prevent DockPeek's core features (hover trigger, global keyboard monitoring, window control). Direct distribution keeps it powerful and unrestricted.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>How do I support development?</h4>
-                <p>DockPeek is offered free as a gift to the macOS community. If you find it valuable and want to support future development, donations are always appreciated via our website.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="cta-section">
-            <h2>Ready to preview windows like a pro?</h2>
-            <p>Free · Direct download · Unrestricted by the App Store</p>
-            <button class="cta-button" onclick="downloadDMG()">
-                ⬇ Download Now
-            </button>
-        </div>
+        <a href="https://github.com/bouzardjomehri/dockpeek-free/releases/tag/v1.1" class="cta-button">
+            ⬇ Download DockPeek 1.1 (1.3 MB)
+        </a>
     </div>
 
     <footer>
-        <p>&copy; 2026 FluxDesign. Made for Mac. Designed for life.</p>
-        <p style="margin-top: 8px;">Have questions? Email hello@fluxnetdesign.com</p>
+        <p>&copy; 2026. Made for Mac. Designed for life.</p>
+        <p style="margin-top: 8px;">Download from <a href="https://github.com/bouzardjomehri/dockpeek-free/releases/tag/v1.1" style="color: #4CAF50; text-decoration: none;">GitHub Releases</a></p>
     </footer>
-
-    <script>
-        function downloadDMG() {
-            fetch('DockPeek-1.1.dmg')
-                .then(r => {
-                    if (!r.ok) throw new Error('Download failed: ' + r.status);
-                    return r.blob();
-                })
-                .then(blob => {
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'DockPeek-1.1.dmg';
-                    document.body.appendChild(a);
-                    a.click();
-                    setTimeout(() => {
-                        URL.revokeObjectURL(url);
-                        document.body.removeChild(a);
-                    }, 100);
-                })
-                .catch(e => alert('Download error: ' + e.message));
-        }
-    </script>
 </body>
 </html>
